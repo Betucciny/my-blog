@@ -1,8 +1,8 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
@@ -13,38 +13,97 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
+			<h1>My Blog</h1>
+			
+			<section
+				class="flex flex-col lg:flex-row items-center justify-around content-center mb-10"
+			>
+				<div class="grid">
+					<p>
+						<strong>Roberto</strong> - <em
+							>Gamer, Anime Enthusiast, Tattoo Lover</em
+						>
+					</p>
+				</div>
+				<div class="max-w-[35%]">
+					<img
+						src="../../public/Gaming1.jpg"
+						alt="Gaming"
+						class="p-3 w-[35vw] h-auto"
+					/>
+				</div>
+			</section>
+
+			<div class="flex flex-col items-center content-center">
+				<h2>What I'm About:</h2>
+
+				<section
+					class="flex flex-col lg:flex-row mb-5 items-center justify-arround content-center"
+				>
+					<div>
+						<img
+							src="../../public/Gaming2.jpg"
+							alt="Gaming"
+							class="p-3 w-[35vw] h-auto"
+						/>
+					</div>
+					<div class="grid p-4 m-10">
+						<ul class="flex flex-col items-center justify-center">
+							<li>
+								<strong>Epic Battles:</strong> I love the challenge
+								and thrill of shooter games, especially mastering
+								the combat of those tough souls-like titles.
+							</li>
+							<li>
+								<strong>Adventure Awaits:</strong> Give me a captivating
+								shonen anime with a determined protagonist, an isekai
+								world to explore, or a heartwarming romance, and
+								I'm hooked.
+							</li>
+							<li>
+								<strong>Fan for Life:</strong> My fandoms run deep,
+								as evidenced by my tattoos! From <strong
+									>The Lance of Longinus</strong
+								> from Evangelion to <strong>Luffy</strong> from
+								One Piece,
+								<strong>The Jedi Order</strong> from Star Wars, and
+								a fresh piece from the epic world of Elden Ring.
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+
+			<h2>Want to know more?</h2>
 			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
+				This site is still under construction, but check out the links
+				above to explore my favorite things. I'm also planning to add
+				some posts about my gaming experiences, anime reviews, maybe
+				even some tattoo inspiration, and some projects I'm working on.
 			</p>
+			<h2>Let's Connect!</h2>
 			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
+				I'm always down to chat about games, anime, or anything else
+				that sparks our interest. Hit me up on discord or instagram and
+				let's geek out!
 			</p>
 		</main>
+
 		<Footer />
+		<style>
+			main {
+				width: 100%;
+				max-width: 80rem;
+				margin: 0 auto;
+				padding: 2rem;
+				min-width: 10rem;
+			}
+			img {
+				width: 35vw;
+				height: auto;
+				margin-top: 1rem;
+			}
+		</style>
 	</body>
 </html>
+<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
