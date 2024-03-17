@@ -1,7 +1,7 @@
 ---
-title: 'Food'
-description: 'I love trying new food'
+title: 'Anime'
+description: 'I love discovering new stories'
 pubDate: 'Mar 16 2023'
-heroImage: '/food.jpg'
+heroImage: '/anime.jpg'
 ---
 
